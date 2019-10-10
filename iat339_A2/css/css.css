@@ -1,0 +1,530 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: black;
+  /* border: 1px solid red; */
+}
+
+.top-nav{
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  align-items: baseline;
+}
+
+.nav-btn ul{
+  display: flex;
+  padding-bottom: 1em;
+
+}
+.nav-btn a{
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  position: relative;
+}
+.nav-btn a:after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -1em;
+  background: red;
+  transition:all 0.3s ease-in-out;
+
+}
+.nav-btn a:hover:after{
+  width: 100%;
+}
+
+
+.examplecode{
+  padding:2em;
+  background-color: rgba(50, 50, 50, 0.1);
+}
+
+.image:hover{
+  opacity: 0.5;
+}
+.img2,.img1,.img3 {
+  position: relative;
+}
+.pdimage2,.pdimage3,.pdimage1 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.img2text,.img3text,.img1text{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  width: 100px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(255,255,255,0.8);
+  text-align: center;
+}
+.img2:hover .img2text {
+  opacity: 1;
+}
+.img1:hover .img1text {
+  opacity: 1;
+}
+.img3:hover .img3text {
+  opacity: 1;
+}
+
+.imagetext2,.imagetext1,.imagetext3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.imagetext1 a, .imagetext2 a,.imagetext3 a{
+  text-decoration: none;
+}
+
+.leftnavigation{
+  position: relative;
+  padding-right: 3em;
+  padding-left: 3em;
+  flex:1;
+  order:1;
+}
+
+.lefttopnavigation{
+  flex:1;
+  order:1;
+}
+.leftbottomnavigation{
+  flex:4;
+  order:2;
+}
+
+.render{
+  padding-left: 3em;
+  position: relative;
+}
+
+.interactive_elementse > h2, .text_elements>h2 ,.combined_elementse>h2 ,.citations>h2 ,.brandingideas>h2{
+  padding-left:  1em;
+  padding-right: 1em;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  font-weight:  900;
+  font-size: 20px;
+}
+
+.inside a{
+  padding: 0.3em;
+  font-family: 'Mukta', sans-serif;
+  font-style: italic;
+  text-decoration: none;
+
+}
+
+.example_code{
+  padding-top: 2em;
+}
+
+
+
+.right-title > h2 {
+ font-family: 'Rubik', sans-serif;
+ font-size: 25px;
+}
+.ex4{
+  text-align: center;
+  font-family: 'Mukta', sans-serif;
+  font-size: 15px;
+}
+.ex4 a{
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+
+.ex4 a:after{
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -1em;
+  background: #FFCE00;
+  transition:all 0.3s ease-in-out;
+}
+
+.ex4 a:hover:after{
+  width: 100%;
+}
+
+.homepage{
+  display: flex;
+  flex-direction: column;
+}
+
+/*.navigationbutton{
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  }*/
+
+  .textinput:focus{
+    outline-color: red;
+    background-color: black;
+  }
+
+  .homepage{
+    padding-left: 1em;
+  }
+
+/* .element{
+  margin-top: 6em;
+  } */
+  .right-title{
+    padding-top: 2em;
+    padding: 1em 1em 1em 0em;
+
+    padding-top: 4em;
+    padding-bottom: 4em;
+    width:90%;
+  }
+  .intexlinkrender, .navigationlinkrender,.sumitbuttonsrender,.textinputrender,.radiobuttonrender,.imagewithlinkrender
+  ,.headingrender, .paragraphsrender, .numberedlistsrender
+  ,.mainnavigationrender,.productrender,.paymentrender,.checkoutrender
+  ,.citationrender,.brandrender,.crender,.adrender{
+
+    padding: 2em;
+    display: flex;
+    display:inline-table;
+    font-family: 'Mukta', sans-serif;
+    list-style: inside;
+    border: 1px dashed transparent;
+    background: linear-gradient(white,white) padding-box,
+    repeating-linear-gradient(-45deg,#6b6b6b 0, #e7dcd6 0.35em,white 0,white 0.7em);
+  }
+  .sumitbox{
+    display: flex;
+  }
+
+  .mainnavigationbutton{
+    display: flex;
+    background-color: black;
+
+
+  }
+
+
+  .productrender>h4{
+    text-decoration: none;
+
+  }
+
+  .mainnavigationbutton>h4{
+    border-radius: 25px;
+    padding: 1em;
+  }
+  .maninnavigationbutton h4 a{
+    text-decoration: none;
+  }
+
+  .interactive_elementse a, .text_elements a,.combined_elementse a,.citations a,.brandingideas a{
+    text-decoration: none;
+    color: #6b6b6b;
+
+  }
+
+
+
+  .navigationlinkrender h4{
+    padding: 1em;
+    border-radius: 25px;
+  }
+  .navigationlinkrender a{
+    text-decoration: none;
+    padding:1em;
+    color: white;
+    background-color: #000;
+    border-radius: 5px;
+
+    -webkit-transition: background-color 0.5s ease-out;
+    transition: background-color 0.5s ease-out;
+  }
+  .navigationlinkrender a:hover, .navigationlinkrender a:focus {
+    background-color: #999;
+  }
+
+
+
+  section .interactive_elementse>h4{
+    border-radius: 25px;
+    padding:1em;
+  }
+  section .text_elements>h4{
+    border-radius: 25px;
+    padding: 1em;
+  }
+  section .combined_elementse>h4{
+    border-radius: 25px;
+    padding: 1em;
+  }
+  section .citations>h4{
+    border-radius: 25px;
+    padding: 1em;
+  }
+  section .brandingideas>h4{
+    border-radius: 25px;
+    padding: 1em;
+  }
+
+
+
+  .text_elements{
+
+    margin-top: 2em;
+  }
+  .combined_elementse{
+    margin-top: 2em;
+  }
+  .citations{
+    margin-top: 2em;
+  }
+  .brandingideas{
+    margin-top: 2em;
+  }
+
+  .element{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .render{
+    flex:5;
+    order:2;
+  }
+
+
+  .mainnavigationbutton{
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  .interactive_elementse{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.1em solid lightgray;
+    padding-bottom: 1em;
+
+  }
+  .text_elements{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.1em solid lightgray;
+    padding-bottom: 1em;
+  }
+  .combined_elementse{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.1em solid lightgray;
+    padding-bottom: 1em;
+  }
+
+  .citations{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.1em solid lightgray;
+    padding-bottom: 1em;
+  }
+
+  .render{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .productrender{
+    width: 60%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .img1{
+    flex:1;
+    order:1;
+  }
+  .img2{
+    flex:1;
+    order:2;
+  }
+  .img3{
+    flex:1;
+    order:3;
+  }
+
+
+
+  .linktext{
+    color: red;
+  }
+  .sumit{
+    outline:none;
+    padding:1em 4em;
+    background: red;
+  font-family: 'Rubik', sans-serif;
+    font-weight: 900;
+  }
+  .sumitbox{
+    padding-right: 1em;
+  }
+  .reset1{
+    padding-left: 1em;
+  }
+  .reset{
+    outline: none;
+    padding:1em 4em;
+    background: red;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 900;
+  }
+  .resetbutton{
+    padding:1em;
+  }
+  .sumitbutton{
+    padding:1em;
+  }
+  .sumit:hover{
+    color:white;
+    background: #000;
+    box-shadow: 5px 5px 10px #888888;
+  }
+  .reset:hover{
+    color:white;
+    background: #000;
+    box-shadow: 5px 5px 10px #888888;
+  }
+  .textinput{
+    width: 20em;
+    height: 3em;
+    padding: 1em;
+    border-width: 3px;
+    border-color: red;
+    border-image-slice: 10;
+    font-size: 15px;
+  }
+
+
+  .yes, .no{
+    padding-left: 1em;
+  }
+
+  .headingrender>h3{
+  font-family: 'Mansalva', cursive;
+    font-size: 35px;
+  }
+  .headingrender>h4{
+    font-family: 'Rubik', sans-serif;
+  }
+  .headingrender>h5{
+    font-family: 'Mukta', sans-serif;
+  }
+  }
+  .paragraphsrender>h4{
+    font-family: 'Rubik', sans-serif;
+  }
+  li, ol{
+    line-height: 1.5em;
+    padding-right: 1em;
+    font-family: 'Mukta', sans-serif;
+  }
+
+  .sumit2{
+    padding-left: 30%;
+  }
+  .sumit3{
+    padding-left:12em;
+  }
+  .ssumit3{
+    padding-top: 1em;
+  }
+
+  .paymentrender label{
+    font-family: 'Mukta', sans-serif;
+    font-size: 20px;
+  }
+  .paymentrender h4{
+    font-family: 'Rubik', sans-serif;
+  }
+  .checkoutrender>h3{
+    font-family: 'Rubik', sans-serif;
+  }
+  .itemlist{
+    background-color: rgba(50, 50, 50, 0.05);
+    padding: 1em 1.5em 1.5em 1.5em;
+
+  }
+  .totallist{
+    border-bottom: .15em solid lightgray;
+  }
+  .totalp{
+    padding-top: 1em;
+    padding-left: 10em;
+  }
+  .crender h3{
+    font-family: 'Rubik', sans-serif;
+  }
+
+  .mukta{
+    font-family: 'Mukta', sans-serif;
+  }
+  .Rubik {
+    font-family: 'Rubik', sans-serif;
+  }
+
+  .Mansalva{
+    font-family: 'Mansalva', cursive;
+  }
+  .color{
+ display: flex;
+}
+.white{
+ background-color: #FFFFFF;
+ width: 100px;
+ height: 100px;
+}
+
+.black{
+ background-color: #000000;
+ width: 100px;
+ height: 100px;
+}
+.red{
+ background-color: #FF7B5F;
+ width: 100px;
+ height: 100px;
+}
+.heyhey{
+  display: flex;
+  flex-direction: row;
+}
+
+
+@media screen and (max-width: 784px){
+  .leftnavigation{
+    position: absolute;
+    left: -20em;
+  }
+}
