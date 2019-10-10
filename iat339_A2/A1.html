@@ -4,137 +4,182 @@
   <meta charset="utf-8">
   <style>
 
-</style>
+    .ex3{
+      color: red;
 
-<title>P2 - Team</title>
+      position: relative;
+      text-decoration: none;
+    }
 
-<link href="css/css.css" rel="stylesheet">
+    .ex3:after{
+      content: '';
+      display: block;
+      width: 0;
+      height: 3px;
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      background: #FFCE00;
+      transition:all 0.3s ease-in-out;
+    }
+    .ex3:hover:after{
+      width: 100%;
+    }
+    a.ex3:active {
+      color: black;
+    }
+
+
+
+
+    div.twidth {
+      width: 50%;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>P2 - Team</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Cutive&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+
+  <link href="css/css.css" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 
 
 <body>
 
-  <div class= "homepage">
-    <section id='top'>
-      <div class='topnagvigation'>
-        <div class='navigationbutton'>
-          <h2 class="ex4"><a href="#homepage">LOL</a></h2>
-          <h4 class="ex4"><a href="#homepage">Interactive Elements</a></h4>
-          <h4 class="ex4"><a href="A1P2.html">Text Elements</a></h4>
-          <h4 class="ex4"><a href="A1P3.html">Combined Elements</a></h4>
-          <h4 class="ex4"><a href="A1P4.html">Citations</a></h4>
-          <h4 class="ex4"><a href="A1P4.html">Branding</a></h4>
 
+
+  <div class="top-nav">
+    <div class='navigationbutton'>
+      <img src="img/11.png" width="50">
+    </div>
+    <div class="nav-btn">
+      <ul>
+
+        <li><a href="#homepage">Home</a></li>
+        <li><a href="#">Game</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Shop</a></li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+  <!-- interactive_elements -->
+  <section id="interactive_elements">
+
+
+    <div class="element">
+
+
+      <div class="leftnavigation">
+        <div class="lefttopnavigation">
+          <div class="interactive_elementse">
+            <br>
+            <br>
+            <h2>Interactive Elements</h2>
+            <br>
+            <h4 class="ex4"><a href="#il">In-text link</a></h4>
+            <h4 class="ex4"><a href="#nl">Navigation Link</a></h4>
+            <h4 class="ex4"><a href="#sb">Submit/Reset Buttons</a></h4>
+            <h4 class="ex4"><a href="#ti">Text Input Field with Label</a></h4>
+            <h4 class="ex4"><a href="#rb">Radio Button with Label</a></h4>
+            <h4 class="ex4"><a href="#iml">Image as a Link</a></h4>
+          </div>
+
+
+          <div class="text_elements">
+            <h2>Text <br>Elements</h2>
+            <h4 class="ex4"><a href="#hd">Headings</a></h4>
+            <h4 class="ex4"><a href="#pg">Paragraphs</a></h4>
+            <h4 class="ex4"><a href="#nbl">Numbered Lists</a></h4>
+          </div>
+
+          <div class="combined_elementse">
+            <h2>Combined Elements</h2>
+            <h4 class="ex4"><a href="#mn">Main Navigation</a></h4>
+            <h4 class="ex4"><a href="#pd">Product/Service Listing</a></h4>
+            <h4 class="ex4"><a href="#pm">Payment Form</a></h4>
+            <h4 class="ex4"><a href="#co">Checkout Cart</a></h4>
+          </div>
+
+          <div class="citations">
+            <h2>Citations</h2>
+            <h4 class="ex4"><a href="#ct">Citation</a></h4>
+          </div>
+
+          <div class="brandingideas">
+            <h2>Branding</h2>
+            <h4 class="ex4"><a href="#bd">Branding Ideas</a></h4>
+            <h4 class="ex4"><a href="#cp">Assemble Brand Components</a></h4>
+            <h4 class="ex4"><a href="#ad"> Art Direction</a></h4>
+          </div>
         </div>
+
       </div>
-    </section>
 
+      <div class="render">
 
-    <!-- interactive_elements -->
-    <section id="interactive_elements">
-
-
-      <div class="element">
-
-
-        <div class="leftnavigation">
-          <div class="lefttopnavigation">
-            <div class="interactive_elementse">
-              <br>
-              <br>
-              <h2>Interactive Elements</h2>
-              <br>
-              <h4 class="ex4"><a href="#il">In-text link</a></h4>
-              <h4 class="ex4"><a href="#nl">Navigation Link</a></h4>
-              <h4 class="ex4"><a href="#sb">Submit/Reset Buttons</a></h4>
-              <h4 class="ex4"><a href="#ti">Text Input Field with Label</a></h4>
-              <h4 class="ex4"><a href="#rb">Radio Button with Label</a></h4>
-              <h4 class="ex4"><a href="#iml">Image as a Link</a></h4>
+        <div class="render1">
+          <div class="intextlink right-title" id="il" >
+            <h2>In-text link:</h2>
+            <br>
+            <div class="intexlinkrender ">
+              <div class='inside'>
+                <h4>Get more
+                  <a href="#" class="ex3 linktext">Information </a>
+                  from us.
+                </h4>
+              </div>
             </div>
-
-
-            <div class="text_elements">
-              <h2>Text <br>Elements</h2>
-              <h4 class="ex4"><a href="#hd">Headings</a></h4>
-              <h4 class="ex4"><a href="#pg">Paragraphs</a></h4>
-              <h4 class="ex4"><a href="#nbl">Numbered Lists</a></h4>
-            </div>
-
-            <div class="combined_elementse">
-              <h2>Combined Elements</h2>
-              <h4 class="ex4"><a href="#mn">Main Navigation</a></h4>
-              <h4 class="ex4"><a href="#pd">Product/Service Listing</a></h4>
-              <h4 class="ex4"><a href="#pm">Payment Form</a></h4>
-              <h4 class="ex4"><a href="#co">Checkout Cart</a></h4>
-            </div>
-
-            <div class="citations">
-              <h2>Citations</h2>
-              <h4 class="ex4"><a href="#ct">Citation</a></h4>
-            </div>
-
-            <div class="brandingideas">
-              <h2>Branding</h2>
-              <h4 class="ex4"><a href="#bd">Branding Ideas</a></h4>
-              <h4 class="ex4"><a href="#cp">Assemble Brand Components</a></h4>
-              <h4 class="ex4"><a href="#ad"> Art Direction</a></h4>
+            <div class='example_code'>
+              <div class='examplecode'>
+                <code>
+                  &lt;h4&gt;Please contact
+                  <br>
+                  &lt;a href=&quot;#&quot; class=&quot;ex3 linktext&quot;&gt;custom service.&lt;/a&gt;&lt;/h4&gt;
+                </code>
+              </div>
             </div>
           </div>
-          <div class="leftbottomnavigation">
+
+          <div class="navigation_link right-title" id="nl">
+            <h2>Navigation Link:</h2>
+            <br>
+            <div class="navigationlinkrender">
+              <div class ="navigationinside">
+                <h4 class="default-btn"> <a class="default-btn" href="#">Default Button</a></h4>
+              </div>
+            </div>
+            <div class='example_code'>
+              <div class='examplecode'>
+                <code>
+                  &lt;h4 class=&quot;ex4&quot;&gt; &lt;a class=nl1 href=&quot;#&quot;&gt;Default Button&lt;/a&gt;&lt;/h4&gt;
+                </code>
+              </div>
+            </div>
           </div>
-
-        </div>
-
-        <div class="render">
-
-          <div class="render1">
-            <div class="intextlink" id="il" >
-              <h2>In-text link:</h2>
-              <br>
-              <div class="intexlinkrender ">
-                <div class='inside'>
-                  <h4>Get more
-                    <a href="#" class="ex3 linktext">Information </a>
-                  from us.</h4>
-
-                  </div>
-                </div>
-                <div class='example_code'>
-                  <div class='examplecode'>
-                    <code>
-                      &lt;h4&gt;Please contact
-                      <br>
-                      &lt;a href=&quot;#&quot; class=&quot;ex3 linktext&quot;&gt;custom service.&lt;/a&gt;&lt;/h4&gt;
-                    </code>
-                  </div>
-                </div>
-              </div>
-
-              <div class="navigation_link" id="nl">
-                <h2>Navigation Link:</h2>
-                <br>
-                <div class="navigationlinkrender">
-                  <div class ='navigationinside'>
-                    <h4 class="ex4"> <a class=nl1 href="#">Default Button</a></h4>
-                  </div>
-                </div>
-                <div class='example_code'>
-                  <div class='examplecode'>
-                    <code>
-                      &lt;h4 class=&quot;ex4&quot;&gt; &lt;a class=nl1 href=&quot;#&quot;&gt;Default Button&lt;/a&gt;&lt;/h4&gt;
-                    </code>
-                  </div>
-                </div>
-              </div>
-              <div class="sumit_buttons" id="sb">
-                <h2>Submit/Reset Buttons:</h2>
-                <br>
-                <div class="sumitbuttonsrender">
-                  <div class='sumitbox'>
-                    <div class='sumitbutton'>
-                    <input type="Submit" class="sumit" value="SUMIT"></div>
-<div class='resetbutton'>
+          <div class="sumit_buttons right-title" id="sb">
+            <h2>Submit/Reset Buttons:</h2>
+            <br>
+            <div class="sumitbuttonsrender">
+              <div class='sumitbox'>
+                <div class='sumitbutton'>
+                  <input type="Submit" class="sumit" value="SUMIT"></div>
+                  <div class='resetbutton'>
                     <input type="Reset" class= "reset" value="RESET"></div>
                   </div>
 
@@ -149,7 +194,7 @@
                   </div>
                 </div>
               </div>
-              <div class="text_input" id="ti">
+              <div class="text_input right-title" id="ti">
                 <h2>Text Input Field with Label:</h2>
                 <br>
                 <div class="textinputrender">
@@ -166,7 +211,7 @@
               </div>
 
 
-              <div class="radio_button" id="rb">
+              <div class="radio_button right-title" id="rb">
                 <h2>Radio Button with Label:</h2>
                 <br>
                 <div class="radiobuttonrender">
@@ -193,11 +238,11 @@
                   </div>
                 </div>
               </div>
-              <div class="image_with_link" id="iml">
+              <div class="image_with_link right-title" id="iml">
                 <h2>Image as a Link:</h2>
                 <br>
                 <div class="imagewithlinkrender">
-                  <a href="#" class="image"><img src="img/#.jpeg" width="400" alt="No image"> </a>
+                  <a href="#" class="image"><img src="img/1.jpeg" width="400" alt="No image"> </a>
                 </div>
                 <div class='example_code'>
                   <div class='examplecode'>
@@ -212,7 +257,7 @@
 
 
             <div class="render2">
-              <div class="heading" id="hd">
+              <div class="heading right-title" id="hd">
                 <h2>Headings:</h2>
                 <br>
 
@@ -243,7 +288,7 @@
                 </div>
               </div>
 
-              <div class="paragraphs" id="pg">
+              <div class="paragraphs right-title" id="pg">
                 <h2>Paragraphs:</h2>
                 <br>
                 <div class="paragraphsrender">
@@ -270,7 +315,7 @@
                 </div>
               </div>
 
-              <div class="numbered_lists" id="nbl">
+              <div class="numbered_lists right-title" id="nbl">
                 <h2>Numbered Lists:</h2>
                 <br>
                 <div class="numberedlistsrender">
@@ -322,16 +367,16 @@
 
             <div class="3render3">
 
-              <div class="main_navigation" id="mn">
+              <div class="main_navigation right-title" id="mn">
                 <h2>Main Navigation:</h2>
                 <br>
                 <div class="mainnavigationrender">
                   <div class="mainnavigationbutton">
-                    <h4 class="ex4"><a href="#il">Interactive Elements</a></h4>
-                    <h4 class="ex4"><a href="#il">Text Elements</a></h4>
-                    <h4 class="ex4"><a href="#il">Combined Elements</a></h4>
-                    <h4 class="ex4"><a href="#il">Citations</a></h4>
-                    <h4 class="ex4"><a href="#il">Branding</a></h4>
+                    <h4 class="ex4"><a href="#il">Home</a></h4>
+                    <h4 class="ex4"><a href="#il">Games</a></h4>
+                    <h4 class="ex4"><a href="#il">Service</a></h4>
+                    <h4 class="ex4"><a href="#il">Shop</a></h4>
+                    
                   </div>
                 </div>
                 <div class='example_code'>
@@ -353,25 +398,25 @@
 
               </div>
 
-              <div class="product" id="pd">
+              <div class="product right-title" id="pd">
                 <h2>Product/Service Listing:</h2>
                 <br>
                 <div class="productrender">
                   <div class='img1'>
-                    <a class="pdimage1"><img src="img/a.jpg" width="100" alt="No image"></a>
+                    <a class="pdimage1"><img src="img/1.png" width="100" alt="No image"></a>
                     <div class='img1text'>
                       <div class='imagetext1'><a href="pd">Rambo: Last Blood</a></div>
                     </div>
                   </div>
                   <div class='img2'>
-                    <a class="pdimage2"><img src="img/b.jpg" width="100" alt="No image"></a>
+                    <a class="pdimage2"><img src="img/2.png" width="100" alt="No image"></a>
                     <div class='img2text'>
                       <div class='imagetext2'><a href="pd">Downton Abbey</a></div>
                     </div>
                   </div>
 
                   <div class='img3'>
-                    <a class="pdimage3"><img src="img/c.jpg" width="100" alt="No image"></a>
+                    <a class="pdimage3"><img src="img/3.png" width="100" alt="No image"></a>
                     <div class='img3text'>
                       <div class='imagetext3'><a href="pd">IT Chapter Two</a></div>
                     </div>
@@ -409,7 +454,7 @@
                 </div>
               </div>
 
-              <div class="payment" id="pm">
+              <div class="payment right-title" id="pm">
                 <h2>Payment Form:</h2>
                 <br>
                 <div class="paymentrender">
@@ -462,7 +507,7 @@
                 </div>
               </div>
 
-              <div class="checkout" id="co">
+              <div class="checkout right-title" id="co">
                 <h2>Checkout Cart:</h2>
                 <br>
                 <div class="checkoutrender">
@@ -543,64 +588,72 @@
 
           </div>
           <div class="render4">
-            <div class="citation" id="ct">
+            <div class="citation right-title" id="ct">
               <h2>Citation:</h2>
               <br>
               <div class="citationrender">
                 <ul>
-                  <li>
-                    font: https://fonts.google.com/specimen/Mansalva (regular title art)
-                    <br>
-                         https://fonts.google.com/specimen/Rubik (bold)
-                         <br>
-                         https://fonts.google.com/specimen/Mukta (regular p)
-                  </li></ul>
+                  
+                </ul>
               </div>
             </div>
 
-            <div class="brand" id="bd">
+            <div class="brand right-title" id="bd">
               <h2>Branding Ideas:</h2>
               <br>
               <div class="brandrender">
                 <h3>Company type:</h3>
-
+                
               </div>
             </div>
 
-            <div class="c" id="cp">
+            <div class="c right-title" id="cp">
               <h2>Components:</h2>
               <br>
 
               <div class="crender" >
                 <h3>Font</h3>
                 <br>
+                <div class='lato'>
+                  <h2> Lato：</h2>
 
+                  <h5>regular</h5>
+                  <div class='italic'><h5>italic</h5></div>
+                </div>
+                <br>
+                <div class='Mansalva'>
+                  <h2> Mansalva: </h2>
+                  <h5> cursive </h5>
+                </div>
+                <br>
+                <div class='SourceSansPro'>
+                  <h2>Source Sans Pro:  </h2>
+                  <h5>regular</h5>
+                </div>
+                <br>
+                <div class='Cutive'>
+                  <h2>Cutive: </h2>
+                  <h5>regular</h5>
+                </div>
 
                 <br>
                 <h3>Colour palettes:</h3>
-                <p>color:
-                rgb(235, 73, 52);
-                white(255,255,255);
-                black(0,0,0);
-                background(34, 25, 56);
-                <p>
+                
 
               </div>
             </div>
 
-            <div class="ad" id="ad">
+            <div class="ad right-title" id="ad">
               <h2>Art Direction:</h2>
               <br>
 
               <div class="adrender">
                 <h3>Art direction: </h3>
                 <h4>moodboard</h4>
+                
                 <p>
-                  3D reality is the art direction we want to achieve.
-                  The layer superposition creates the depth of the website and makes it more realities.
-                  Also, the 3D reality increases the enjoyment of the website, which encourages the user to stay on the website.
-                  Referencing from the other PC gaming website, we found out that the combination of white and red is mainly used, which easy for catching the attention of the audience.
-                  So, we will mainly use red and white colour for our web design.                </p>
+                  
+                </p>
               </div>
             </div>
 
@@ -628,29 +681,6 @@
     <!-- combined_elements -->
 
 
-  </div>
-</body>
 
-
-
-<!-- font: https://fonts.google.com/specimen/Mansalva (regular title art)
-     https://fonts.google.com/specimen/Rubik (bold)
-     https://fonts.google.com/specimen/Mukta (regular p)
-
-
-color:
-rgb(235, 73, 52);
-white(255,255,255);
-black(0,0,0);
-background(34, 25, 56);
-
-
-Art direction:
-3D reality is the art direction we want to achieve.
-The layer superposition creates the depth of the website and makes it more realities.
-Also, the 3D reality increases the enjoyment of the website, which encourages the user to stay on the website.
-Referencing from the other PC gaming website, we found out that the combination of white and red is mainly used, which easy for catching the attention of the audience.
-So, we will mainly use red and white colour for our web design.
-
-
- -->
+  </body>
+  </html>
