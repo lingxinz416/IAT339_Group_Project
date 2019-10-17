@@ -92,10 +92,13 @@ body{
 .main-top{
 	position: relative;	
 }
+/* .main-top-bg{
+	position: relative;
+} */
 .main-top-bg-intro{
 	position: absolute;
 	right: 20%;
-	top: 25%;
+	top: 15vh;
 	color: seashell;
 	display: flex;
 	flex-direction: column;
@@ -103,8 +106,8 @@ body{
 }
 .main-top-spd{
 	position: absolute;
-	left: -100%;
-	animation: spider 1s ease-in-out forwards;
+	/* left: -100%; */
+	animation: spider 2s ease-in-out forwards;
 }
 .main-top-bg-intro h1{
 	font-weight: 900;
@@ -134,60 +137,421 @@ body{
 	background-color:#fa5c17;
 	box-shadow: 2px 3px #df2020;
 }
+.main>h3{
+	margin-left: 3em;
+	color: seashell;
+}
 .main-movie{
 	display: flex;
 	justify-content: space-between;
 	margin-left: 3em;
-	margin-top: 2em;
+	margin-top: 1em;
 }
-.main-movie img{
-	border-radius: 10px;
+.main-movie-joker img{
+	border-radius: 5px;
 	width: 80%;
 	transition: 2s ease-in-out;
 	transform-origin: center top;
 	-webkit-transform-origin: center top;
-	transform: scaleX(1);
-	transform: scaleY(1);
+	transform: scale(1,1);
+	
 }
-.main-movie img:hover{
+.main-movie-joker img:hover{
 	filter: brightness(40%);
-	transform: scale(1.2, 1.2);	
+	transform: scale(1.2, 1.2);		
 }
+.main-movie-joker img:hover ~div{
+	transform: scale(1.2, 1.2);	
+	opacity: 1;
+}
+.main-movie-joker-intro{
+	position: absolute;
+	top: 0;
+	color: seashell;
+	z-index: 1;
+	opacity: 0;
+	transform-origin: center top;
+	transform: scale(1,1);
+	transition: 2s ease-in-out;
+}
+.main-movie-joker-intro1{
+	position: absolute;
+	top: 0;
+	right: 20%;
+	color: seashell;
+	z-index: 1;
+	opacity: 0;
+	transform-origin: center top;
+	transform: scale(1,1);
+	transition: 2s ease-in-out;
+}
+.main-movie-joker-intro2{
+	position: absolute;
+	top: 50%;
+	right: 20%;
+	color: seashell;
+	z-index: 1;
+	opacity: 0;
+	transform-origin: center top;
+	transform: scale(1,1);
+	transition: 2s ease-in-out;
+}
+
+.main-movie-joker{
+	position: relative;
+}
+.main-movie-Godzilla{
+	position: relative;
+}
+.main-movie-Alita{
+	position: relative;
+}
+.main-movie-avengers{
+	position: relative;
+}
+.main-movie-hollywood{
+	position: relative;
+}
+.main-movie-Fast_Furious{
+	position: relative;
+}
+.main-movie-Godzilla img{
+	border-radius: 5px;
+	width: 80%;
+	transition: 2s ease-in-out;
+	transform-origin: center top;
+	-webkit-transform-origin: center top;
+	transform: scale(1,1);
+	
+}
+.main-movie-Godzilla img:hover{
+	filter: brightness(40%);
+	transform: scale(1.2, 1.2);		
+}
+.main-movie-Godzilla img:hover ~div{
+	transform: scale(1.2, 1.2);	
+	opacity: 1;
+}
+.main-movie-Godzilla-intro{
+	position: absolute;
+	top: 0;
+	
+	color: seashell;
+	z-index: 1;
+	opacity: 0;
+	transform-origin: center top;
+	transform: scale(1,1);
+	transition: 2s ease-in-out;
+}
+.main-movie-Godzilla-intro1{
+	position: absolute;
+	top: 0;
+	right: 20%;
+	color: seashell;
+	z-index: 1;
+	opacity: 0;
+	transform-origin: center top;
+	transform: scale(1,1);
+	transition: 2s ease-in-out;
+}
+.main-movie-Godzilla-intro2{
+	position: absolute;
+	top: 50%;
+	right: 20%;
+	color: seashell;
+	z-index: 1;
+	opacity: 0;
+	transform-origin: center top;
+	transform: scale(1,1);
+	transition: 2s ease-in-out;
+}
+.main-movie-Alita img{
+	border-radius: 5px;
+	width: 80%;
+	transition: 2s ease-in-out;
+	transform-origin: center top;
+	-webkit-transform-origin: center top;
+	transform: scale(1,1);
+	
+}
+.main-movie-Alita img:hover{
+	filter: brightness(40%);
+	transform: scale(1.2, 1.2);		
+}
+.main-movie-Alita img:hover ~div{
+	transform: scale(1.2, 1.2);	
+	opacity: 1;
+}
+.main-movie-Alita-intro{
+	position: absolute;
+	top: 0;
+	color: seashell;
+	z-index: 1;
+	opacity: 0;
+	transform-origin: center top;
+	transform: scale(1,1);
+	transition: 2s ease-in-out;
+}
+.main-movie-Alita-intro1{
+	position: absolute;
+	top: 0;
+	right: 20%;
+	color: seashell;
+	z-index: 1;
+	opacity: 0;
+	transform-origin: center top;
+	transform: scale(1,1);
+	transition: 2s ease-in-out;
+}
+.main-movie-Alita-intro2{
+	position: absolute;
+	top: 50%;
+	right: 20%;
+	color: seashell;
+	z-index: 1;
+	opacity: 0;
+	transform-origin: center top;
+	transform: scale(1,1);
+	transition: 2s ease-in-out;
+}
+.main-movie-avengers img{
+	border-radius: 5px;
+	width: 80%;
+	transition: 2s ease-in-out;
+	transform-origin: center top;
+	-webkit-transform-origin: center top;
+	transform: scale(1,1);
+	
+}
+.main-movie-avengers img:hover{
+	filter: brightness(40%);
+	transform: scale(1.2, 1.2);		
+}
+.main-movie-avengers img:hover ~div{
+	transform: scale(1.2, 1.2);	
+	opacity: 1;
+}
+.main-movie-avengers-intro{
+	position: absolute;
+	top: 0;
+	color: seashell;
+	z-index: 1;
+	opacity: 0;
+	transform-origin: center top;
+	transform: scale(1,1);
+	transition: 2s ease-in-out;
+}
+.main-movie-avengers-intro1{
+	position: absolute;
+	top: 0;
+	right: 20%;
+	color: seashell;
+	z-index: 1;
+	opacity: 0;
+	transform-origin: center top;
+	transform: scale(1,1);
+	transition: 2s ease-in-out;
+}
+.main-movie-avengers-intro2{
+	position: absolute;
+	top: 50%;
+	right: 20%;
+	color: seashell;
+	z-index: 1;
+	opacity: 0;
+	transform-origin: center top;
+	transform: scale(1,1);
+	transition: 2s ease-in-out;
+}
+.main-movie-hollywood img{
+	border-radius: 5px;
+	width: 80%;
+	transition: 2s ease-in-out;
+	transform-origin: center top;
+	-webkit-transform-origin: center top;
+	transform: scale(1,1);
+	
+}
+.main-movie-hollywood img:hover{
+	filter: brightness(40%);
+	transform: scale(1.2, 1.2);		
+}
+.main-movie-hollywood img:hover ~div{
+	transform: scale(1.2, 1.2);	
+	opacity: 1;
+}
+.main-movie-hollywood-intro{
+	position: absolute;
+	top: 0;
+	color: seashell;
+	z-index: 1;
+	opacity: 0;
+	transform-origin: center top;
+	transform: scale(1,1);
+	transition: 2s ease-in-out;
+}
+.main-movie-hollywood-intro1{
+	position: absolute;
+	top: 0;
+	right: 20%;
+	color: seashell;
+	z-index: 1;
+	opacity: 0;
+	transform-origin: center top;
+	transform: scale(1,1);
+	transition: 2s ease-in-out;
+}
+.main-movie-hollywood-intro2{
+	position: absolute;
+	top: 50%;
+	right: 20%;
+	color: seashell;
+	z-index: 1;
+	opacity: 0;
+	transform-origin: center top;
+	transform: scale(1,1);
+	transition: 2s ease-in-out;
+}
+.main-movie-Fast_Furious img{
+	border-radius: 5px;
+	width: 80%;
+	transition: 2s ease-in-out;
+	transform-origin: center top;
+	-webkit-transform-origin: center top;
+	transform: scale(1,1);
+	
+}
+.main-movie-Fast_Furious img:hover{
+	filter: brightness(40%);
+	transform: scale(1.2, 1.2);		
+}
+.main-movie-Fast_Furious img:hover ~div{
+	transform: scale(1.2, 1.2);	
+	opacity: 1;
+}
+.main-movie-Fast_Furious-intro{
+	position: absolute;
+	top: 0;
+	color: seashell;
+	z-index: 1;
+	opacity: 0;
+	transform-origin: center top;
+	transform: scale(1,1);
+	transition: 2s ease-in-out;
+}
+.main-movie-Fast_Furious-intro1{
+	position: absolute;
+	top: 0;
+	right: 20%;
+	color: seashell;
+	z-index: 1;
+	opacity: 0;
+	transform-origin: center top;
+	transform: scale(1,1);
+	transition: 2s ease-in-out;
+}
+.main-movie-Fast_Furious-intro2{
+	position: absolute;
+	top: 50%;
+	right: 20%;
+	color: seashell;
+	z-index: 1;
+	opacity: 0;
+	transform-origin: center top;
+	transform: scale(1,1);
+	transition: 2s ease-in-out;
+}
+
+
 /* main content introduction end*/
+/* other movie list start */
+.Movie-list-firstLine{
+	display: flex;
+	flex-direction: column;
+}
+.Movie-list-firstLine h3{
+	margin-left: 3em;
+	margin-top: 2em;
+	color: seashell;
+}
+.Movie-list-firstLine-img{
+	display: flex;
+	margin-left: 2.5em;
+
+}
+
+.Movie-list-firstLine-img img{
+	border-radius: 5px;
+	margin: 1em 10px;
+	width: 10.7%;
+}
 
 @media screen and (max-width:1360px){
 	.main-top-bg-intro{
 	right:19%;
-	top: 24%;
+	top: 15vh;
 	/* height:98vh; */
-	/* font-size: 90%; */
+	/* font-size: 1vw; */
+	}
+	.main-top-bg-intro h2{
+		font-size: 2vw;
+		font-weight: 100;
+	}
+	.main-top-bg-intro h1{
+		font-size: 2vw;
+		font-weight: 100;
 	}
 }
 @media screen and (max-width:1280px){
 	.main-top-bg-intro{
 		/* right:17%; */
-		top: 23%;
-		height:98vh;
-		font-size: 90%;
+		top: 15vh;
+		/* height:80vh; */
+		/* font-size: 1vw; */
+		}
+		.main-top-bg-intro h2{
+			font-size: 2vw;
+			font-weight: 100;
+		}
+		.main-top-bg-intro h1{
+			font-size: 2vw;
+			font-weight: 100;
 		}
 }
 @media screen and (max-width:1200px){
 	.main-top-bg-intro{
-		/* right:15%; */
-		top: 22%;
-		height:80vh;
-		font-size: 85%;
+		top: 15vh;
+
+		}
+		.main-top-bg-intro h2{
+			font-size: 2vw;
+			font-weight: 100;
+		}
+		.main-top-bg-intro h1{
+			font-size: 2vw;
+			font-weight: 100;
+		}
+		.Movie-list-firstLine-img{
+			flex-wrap: wrap;
+		}
+		.Movie-list-firstLine>h3{
+			font-size: 1.5vw;
+			
 		}
 }
 @media screen and (max-width:1100px){
 	.main-top-bg-intro{
 		/* right:12%; */
-		top: 21%;
-		height:80vh;
-		font-size: 85%;
+		top: 14vh;
+		/* height:80vh; */
+		/* font-size: 1vw; */
 		}
 		.main-top-bg-intro h2{
-			font-size: 25px;
+			font-size: 2vw;
+			font-weight: 100;
+		}
+		.main-top-bg-intro h1{
+			font-size: 2vw;
 			font-weight: 100;
 		}
 }
@@ -200,9 +564,17 @@ body{
 	}
 	.main-top-bg-intro{
 		/* right:10%; */
-		top: 20%;
-		height:80vh;
-		font-size: 70%;
+		top: 13vh;
+		/* height:80vh; */
+		/* font-size: 1vw; */
+		}
+		.main-top-bg-intro h2{
+			font-size: 2vw;
+			font-weight: 100;
+		}
+		.main-top-bg-intro h1{
+			font-size: 2vw;
+			font-weight: 100;
 		}
 }
 @media screen and (max-width:976px){
@@ -214,12 +586,16 @@ body{
 	}
 	.main-top-bg-intro{
 		/* right:7%; */
-		top: 16%;
-		height:70vh;
-		font-size: 65%;
+		top: 12vh;
+		/* height:70vh; */
+		/* font-size: 1vw; */
 		}
 		.main-top-bg-intro h2{
-			font-size: 20px;
+			font-size: 2vw;
+			font-weight: 100;
+		}
+		.main-top-bg-intro h1{
+			font-size: 2vw;
 			font-weight: 100;
 		}
 
@@ -234,39 +610,52 @@ body{
 	}
 	.main-top-bg-intro{
 		/* right:5%; */
-		top: 14%;
-		height:55vh;
-		font-size: 45%;
+		top: 11vh;
+		/* height:55vh; */
+		/* font-size: 1vw; */
 		}
-		.main-top-bg-intro h2{
-			font-size: 12px;
+		.main-top-bg-intro h1{
+			font-size: 2vw;
 			font-weight: 100;
 		}
-		.main-top-bg-intro p:nth-of-type(2){
-			font-size: 7px;
+		.main-top-bg-intro h2{
+			font-size: 2vw;
+			font-weight: 100;
 		}
+
 }
 
 @media screen and (max-width:773px){
 	.main-movie{
-
 		margin-left: 2em;
+		flex-wrap: wrap;
+	}
+	.main-movie>div{
+		width: 28%;
+	}
+	.main>h3{
+		left: 1vw;
+		font-size: 1vw;
 	}
 	.main-top-bg-intro{
-		/* right:1%; */
-		top: 10%;
-		height:38vh;
-		width: 40%;
-		font-size: 35%;
-		}
+	
+		top: 10vh;
+		/* height:38vh; */
 
-		.main-top-bg-intro h2{
-			font-size: 8px;
+		/* font-size: 1vw; */
+		transition: 2s ease-in-out;
+		transform: translateX(auto);
+	}
+	.main-top-bg-intro h1{
+		font-size: 2vw;
+		font-weight: 100;
+	}
+
+	.main-top-bg-intro h2{
+			font-size:2vw;
 			font-weight: 100;
-		}
-		.main-top-bg-intro p:nth-of-type(2){
-			font-size: 5px;
-		}
+	}
+
 	.top-menu-nav{
 		width: auto;
 	}
@@ -299,7 +688,10 @@ body{
 		display: none;
 		
 	}
-	
+	.main-top-spd img{
+		opacity: 1;
+		animation: miss 2s ease-in-out forwards;
+	}
 	.top{
 		height: 8.5vh;
 	}
@@ -310,6 +702,89 @@ body{
 	.top-account div .fa{
 		margin-right: 1em;
 	}
+}
+
+@media screen and (max-width:689px){
+	.main-top-bg-intro{
+	
+		top: 8vh;
+		/* width: 50vw; */
+		left:20%;
+
+		font-size: 1vw;
+		transform: translateX(0);
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.main-top-bg-intro h1{
+		font-size: 2vw;
+		font-weight: 100;
+	}
+
+	.main-top-bg-intro h2{
+			font-size:2vw;
+			font-weight: 100;
+	}
+	.main-movie p{
+		font-size: 1vw;
+	}
+}
+@media screen and (max-width:550px){
+	.main-top-bg-intro{
+	
+		top: 6vh;
+		/* width: 50vw; */
+		left:20%;
+
+		font-size: 1vw;
+		transform: translateX(0);
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+}
+@media screen and (max-width:468px){
+	.main-top-bg-intro{
+	
+		top: 4vh;
+		/* width: 50vw; */
+		left:20%;
+
+
+	}
+
+}
+@media screen and (max-width:421px){
+	.main-top-bg-intro{
+	
+		top: 2vh;
+		/* width: 50vw; */
+		left:20%;
+
+		font-size: 1vw;
+		transform: translateX(0);
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+}
+@media screen and (max-width:375px){
+	.main-top-bg-intro{
+	
+		top: 0vh;
+		/* width: 50vw; */
+		left:20%;
+
+		font-size: 1vw;
+		transform: translateX(0);
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
 }
 .nav-active{
 	transform: translateX(0%);
@@ -328,10 +803,19 @@ body{
 
 @keyframes spider{
 	from{
-	
+		opacity: 0;
 	}
 	to{
 		
-		left: 0;
+		opacity: 1;
 	}
 }
+
+@keyframes miss{
+	from{
+
+	}to{
+		opacity: 0;
+	}
+}
+
