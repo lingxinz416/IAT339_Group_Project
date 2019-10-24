@@ -77,13 +77,20 @@ body{
 	font-size: 14px;
 }
 
-.top-account a{
+.top-account-name>a{
+	color: #8f8f8f;
+	font-size: 16px;
+	text-decoration: none;
+}
+.top-account>div:nth-child(3) a{
 	color: #8f8f8f;
 	font-size: 20px;
+	text-decoration: none;
 }
 
 .top-account-img{
 	border-radius: 50%;
+	margin: 10px 0;
 	border: 1px solid red;
 }
 /* header end */
@@ -109,6 +116,20 @@ body{
     width: 16%;
 }
 
+/*footer start */
+.footer{
+	display: flex;
+	justify-content: space-evenly;
+	margin: 2em 0;
+	color: #8f8f8f;
+}
+.footer>div{
+	text-align: left;
+}
+.footer>div p{
+	margin: 1em 0;
+}
+/*footer end*/
 
 
 
@@ -170,9 +191,9 @@ body{
 	.top-account{
 		width: auto;
 	}
-	body{
+	/* body{
 		overflow: hidden;
-	}
+	} */
 	.top-menu-nav{
 		position: absolute;
 		left: 0;

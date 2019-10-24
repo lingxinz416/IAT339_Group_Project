@@ -55,3 +55,40 @@
 .table-payment-detail input:hover{
     background-color: rgb(214, 214, 214);
 }
+.next{
+    text-decoration: none;
+    color: seashell;
+    border: 1px solid red;
+    background-color: red;
+    position: relative;
+    left: 50%;
+    bottom: 0;
+    padding: .8em 1.5em;
+}
+.tabli-choose-basic{
+    text-align: center;
+    margin: 1em 0;
+    border: 1px solid red;
+    transition: 1s ease-in-out;
+   
+}
+.tabli-choose-basic a{
+    text-decoration: none;
+    color: black;
+}
+.tabli-choose-basic a:hover{
+    color:white;
+ 
+}
+.tabli-choose-basic:hover{
+
+    background-color: red;
+}
+.tabli-choose-basic a:active{
+    color:white;
+    background-color: red;
+}
+.tabli-choose-basic:active{
+    color:white;
+    background-color: red;
+}
