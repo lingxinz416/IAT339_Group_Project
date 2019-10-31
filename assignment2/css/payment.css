@@ -21,12 +21,12 @@
     width: 13%;
     margin: 2em 5em;
 }
-.header-one #signin{
+.header-one a:nth-child(2){
     margin: 2em 5em;
     font-size: 16px;
     padding: 0.8em 1.2em;
     color: seashell;
-    /* border-radius: 5px; */
+    border-radius: 5px;
     background-color: red;
     text-decoration: none;
 }
@@ -55,22 +55,31 @@
 .table-payment-detail input:hover{
     background-color: rgb(214, 214, 214);
 }
-.next{
+.bottom{
+    display: flex;
+    justify-content: space-evenly;
+}
+.next a{
+    display: flex;
+   
+    justify-content: center;
+   
+   
+    padding: 0.8em 1.1em;
     text-decoration: none;
     color: seashell;
     border: 1px solid red;
     background-color: red;
-    position: relative;
-    left: 50%;
-    bottom: 0;
-    padding: .8em 1.5em;
 }
 .tabli-choose-basic{
     text-align: center;
     margin: 1em 0;
     border: 1px solid red;
     transition: 1s ease-in-out;
-   
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    
 }
 .tabli-choose-basic a{
     text-decoration: none;
@@ -91,4 +100,12 @@
 .tabli-choose-basic:active{
     color:white;
     background-color: red;
+}
+@media screen and (max-width:640px){
+    .header-one img{
+        width: 40%;
+    }
+    .table{
+        flex-wrap: wrap;
+    }
 }
