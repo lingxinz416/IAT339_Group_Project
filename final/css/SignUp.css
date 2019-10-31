@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-bottom: 1px solid #aaa;
+}
+.header-one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header-one img{
+    width: 13%;
+    margin: 2em 5em;
+}
+.header-one #signin{
+    margin: 2em 5em;
+    font-size: 16px;
+    padding: 0.8em 1.2em;
+    color: seashell;
+    border-radius: 5px;
+    background-color: red;
+    text-decoration: none;
+}
+.table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+    /* border: 1px solid red; */
+}
+.table div{
+    margin: 1em;
+}
+.table input[type = "email"], input[type = "password"]{
+    border: none;
+    border-bottom: 1 px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    border: 1px solid red;
+}
+.table input[type = "email"]:hover, input[type = "password"]:hover{
+    background-color: darkgray;
+}
+.table-btn a{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    padding: 0.8em 1em;
+}
+@media screen and (max-width:900px){
+    .table{
+        left: 30%;
+    }
+    .header-one img{
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:800px){
+    .table{
+        left: 25%;
+    }
+}
+@media screen and (max-width:700px){
+    .table{
+        left: 20%;
+    }
+    .header-one img{
+        width: 25%;
+    }
+    .header-one #signin{
+        font-size: 14px;
+    padding: 0.6em 1.2em;
+    }
+}
+@media screen and (max-width:500px){
+    .header-one img{
+        width: 30%;
+    }
+}

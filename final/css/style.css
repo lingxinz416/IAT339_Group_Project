@@ -1,0 +1,185 @@
+/* Header Start*/
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	/*border: 1px solid red;*/
+}
+header{
+	background-color: #2a2a2a;
+	padding: 0.5em 0;
+}
+.top{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#menu-items a{
+	text-decoration: none;
+	color: #8f8f8f;
+	padding: 0 1.5em;
+	/*width: 30%;*/
+}
+.top-logo{
+	margin-right: 10em;
+}
+.top-account{
+	display: flex;
+	align-items: center;
+}
+.top-account div a{
+	font-size: 20px;
+	color: #6d6d6d;
+}
+
+.top-account div{
+	color: #8f8f8f;
+	padding: 0 1.5em;
+}
+.top-account div img{
+	border-radius: 50%;
+	border: 1px solid red;
+}
+
+/* header end */
+
+/* hide phone menu start*/
+#phonemenu{
+	display: flex;
+	flex-direction: column;
+	display: none;
+}
+#phonemenu a div{
+
+	width: 25px;
+	height: 3px;
+	background-color: #6d6d6d;
+	margin: 0.2em;
+	
+}
+
+
+@media screen and (max-width:1042px){
+
+	.top-logo{
+		margin-right: 8em;
+	}
+
+
+}
+
+@media screen and (max-width: 999px){
+	.top-logo{
+		margin-right: 3em;
+	}
+	#menu-items{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+}
+@media screen and (max-width: 902px){
+	.top-logo{
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 821px){
+	header{
+		background-color: #2a2a2a;
+		padding: 1.2em 0;
+	}
+	#phonemenu{
+		display: block;
+		color: #6d6d6d;
+		font-size: 30px;
+		margin: 0.5em;
+		position: absolute;
+		top: 5px;
+
+	}
+/*	body{
+		overflow-x: hidden;
+	}*/
+	#menu-items{
+		/*display: flex;
+		flex-direction: column;	*/
+		background-color: #2a2a2a;
+		padding: 3em 0 25em 0;	
+	}
+	.side{
+		position: absolute;
+		top: 9vh;
+		/*left: -100%;*/
+		animation: menuIn 1s ease-in-out forwards;
+/*		transition-duration: 0.5s ease-in;	
+		transform: translateX(-100%);*/
+	}
+	#menu-items a{
+		margin-bottom: 2em;
+		display: flex;
+		flex-direction: column;
+	}
+	.top-account .top-account-name, .top-account .top-account-img{
+		display: none;
+	}
+	.top-account .fa{
+		font-size: 30px;
+	}
+	.top-logo{
+		margin-left: 5em;
+	}
+}
+/*.side-active{
+	transform: translateX(0%);
+}*/
+/*#phonemenu:active +.side{
+	position: absolute;
+	left: 0;
+}*/
+/*@keyframes menuIn{
+	from{
+
+	}
+	to{
+		left: 0;
+	}
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
