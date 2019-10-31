@@ -40,6 +40,7 @@
   <title>P2 - Team</title>
 
   <link href="https://fonts.googleapis.com/css?family=Mansalva|Mukta|Rubik:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:500&display=swap" rel="stylesheet">
 
   <link href="css/css.css" rel="stylesheet">
 
@@ -52,21 +53,29 @@
 
 
 
-  <div class="top-nav">
-    <div class='navigationbutton'>
-      <img src="img/11.png" width="50">
-    </div>
-    <div class="nav-btn">
-      <ul>
 
-        <li><a href="#homepage">Home</a></li>
-        <li><a href="#">Game</a></li>
-        <li><a href="#">Service</a></li>
-        <li><a href="#">Shop</a></li>
+    <nav class="top">
+      <div class="top-menu">
+        <ul class="top-menu-nav">
+          <li><a href="HomePage.html">Home</a></li>
+          <li><a href="Films.html">Films</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Event.html">Event</a></li>
+        </ul>
+        <div class="burger" onclick="clickMenu()">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
 
-      </ul>
-    </div>
-  </div>
+      <div class="top-logo">
+        <a href="#"><img src="img/Netflix.png" alt="Logo" width="100"></a>
+      </div>
+
+      </div>
+    </nav>
+
 
 
 
@@ -208,11 +217,19 @@
                 <h2>Radio Button with Label:</h2>
                 <br>
                 <div class="radiobuttonrender">
-                  <input id="radio-input-yes" class="radio_input" type="radio" name="Yes_or_No">
-                  <label for="radio-input-yes" class='yes'> Yes</label>
-                  <br>
-                  <input id="radio-input-no"  class = "radio_input" type="radio" name="Yes_or_No">
-                  <label for="radio-input-no" class='no'> No</label>
+
+                  <div class="tabli-choose-basic">
+                      <a href="#">
+                          <h3>1 Month</h3>
+                          <h4>9.99CAD</h4>
+                      </a>
+                  </div>
+                  <div class="tabli-choose-basic">
+                      <a href="#">
+                          <h3>6 Month</h3>
+                          <h4>45.99CAD</h4>
+                      </a>
+                  </div>
 
                 </div>
                 <div class='example_code'>
@@ -235,7 +252,7 @@
                 <h2>Image as a Link:</h2>
                 <br>
                 <div class="imagewithlinkrender">
-                  <a href="#" class="image"><img src="img/4.png" width="400" alt="No image"> </a>
+                  <a href="#" class="image"><img src="img/img2/1.png" heigt="200" alt="No image"> </a>
                 </div>
                 <div class='example_code'>
                   <div class='examplecode'>
@@ -327,7 +344,7 @@
                     <li>&nbsp;&nbsp;&nbsp;High Noon Shen</li>
                   </ol>
                 </div>
-              </div>
+
               <div class='example_code'>
                 <div class='examplecode'>
                   <code>
@@ -352,6 +369,7 @@
                     <br>                &lt;/div&gt;
                   </code>
                 </div>
+                </div>
               </div>
             </div>
 
@@ -363,9 +381,9 @@
                 <div class="mainnavigationrender">
                   <div class="mainnavigationbutton">
                     <h4 class="ex4"><a href="#il">Home</a></h4>
-                    <h4 class="ex4"><a href="#il">Games</a></h4>
-                    <h4 class="ex4"><a href="#il">Service</a></h4>
-                    <h4 class="ex4"><a href="#il">Shop</a></h4>
+                    <h4 class="ex4"><a href="#il">Films</a></h4>
+                    <h4 class="ex4"><a href="#il">About</a></h4>
+                    <h4 class="ex4"><a href="#il">Event</a></h4>
 
                   </div>
                 </div>
@@ -391,28 +409,28 @@
                 <h2>Product/Service Listing:</h2>
                 <br>
                 <div class="productrender">
-                  <div class='img1'>
-                    <a class="pdimage1"><img src="img/1.png" width="100" alt="No image"></a>
-                    <div class='img1text'>
-                      <div class='imagetext1'><a href="pd">League of Legends</a></div>
+                  <div class="main-movie">
+                    <div class="main-movie-joker">
+                      <a href="product1.html"><img src="img/joker-vertical.png" alt="joker"></a>
                     </div>
-                  </div>
-                  <div class='img2'>
-                    <a class="pdimage2"><img src="img/2.png" width="100" alt="No image"></a>
-                    <div class='img2text'>
-                      <div class='imagetext2'><a href="pd">Pokémon Go</a></div>
+                    <div class="main-movie-Godzilla">
+                      <img src="img/Godzilla.jpeg" alt="godzilla">
+                      </div>
+                    <div class="main-movie-Alita">
+                      <img src="img/alita-vertical.png" alt="alita">
                     </div>
-                  </div>
+                    <div class="main-movie-avengers">
+                      <a href="Product.html"><img src="img/avengers-vertical.png" alt="avengers"></a>
+                    </div>
+                    <div class="main-movie-hollywood">
+                      <img src="img/hollywood.png" alt="hollywood">
+                    </div>
+                    <div class="main-movie-Fast_Furious">
+                      <img src="img/Fast&Furious.png" alt="Fast&Furious">
 
-                  <div class='img3'>
-                    <a class="pdimage3"><img src="img/3.png" width="100" alt="No image"></a>
-                    <div class='img3text'>
-                      <div class='imagetext3'><a href="pd">Counter-Strike: Global Offensive</a></div>
                     </div>
                   </div>
-
                 </div>
-
                 <div class='example_code'>
                   <div class='examplecode'>
                     <code>
@@ -447,25 +465,19 @@
                 <h2>Payment Form:</h2>
                 <br>
                 <div class="paymentrender">
-                  <h4> Select Your Payment</h4>
-                  <br>
-                  <input id="text-input-#" class="text_input" type="text" placeholder="Card Number"/>
-                  <br> <br>
-                  <input id="text-input-name" class="text_input" type="text" placeholder="Name On Card"/>
-                  <br> <br>
-                  <input id="radio-input-visa" type="radio" name="payment">
-                  <label for="radio-input-visa">&nbsp;&nbsp;&nbsp;&nbsp;  Visa</label>
-
-                  <br><br>
-                  <input id="radio-input-master" type="radio" name="payment">
-                  <label for="radio-input-master">&nbsp;&nbsp;&nbsp;&nbsp;  Master</label>
-
-                  <br><br>
-                  <input id="radio-input-paypal" type="radio" name="payment">
-                  <label for="radio-input-paypal">&nbsp;&nbsp;&nbsp;&nbsp;  Paypal</label>
-
-                  <br><br>
-                  <div class='sumit2'><input type="Submit" class="sumit" value="OK"></div>
+                  <div class="table-payment">
+                        <h3>Set up your credit or debit card.</h3>
+                        <div class="table-payment-detail">
+                            <input type="text" placeholder="First Name"><br />
+                            <input type="text" placeholder="Last Name"><br />
+                            <input type="text" placeholder="Card Number"><br />
+                            <input type="text" placeholder="Expiration Date(MM/YY)"><br />
+                            <input type="text" placeholder="Security Code(CVV)">
+                            </div>
+                            <div class='sumitbutton'>
+                              <input type="Submit" class="sumit" value="NEXT">
+                        </div>
+                    </div>
                 </div>
                 <div class='example_code'>
                   <div class='examplecode'>
@@ -495,83 +507,6 @@
                   </div>
                 </div>
               </div>
-
-              <div class="checkout right-title" id="co">
-                <h2>Checkout Cart:</h2>
-                <br>
-                <div class="checkoutrender">
-                  <h3>Summary: </h3>
-                  <br>
-                  <div class='itemlist'>
-                    <div class='totallist'>
-                      <h4> Skin Name:&nbsp;&nbsp; BloodMoon Shen
-                      </h4>
-                      <br>
-                      <h4> Service:&nbsp;&nbsp; NA
-                      </h4>
-                      <br>
-                      <h4> Ownership:&nbsp;&nbsp;&nbsp;<select>
-                        <option>select</option>
-                        <option>3 days</option>
-                        <option>7 days</option>
-                        <option>1 month</option>
-                        <option>1 year </option>
-                        <option>10 years</option>
-                        <option>……</option>
-                      </select>
-                    </h4>
-                    <br>
-                  </div>
-                  <div class='totalp'>
-                    <h4> Total : &nbsp;&nbsp;$50
-                    </h4>
-                  </div>
-                </div>
-                <div class='ssumit3'>
-                  <div class='sumit3'><input type="Submit" years class="sumit" value="OK"></div>
-                </div>
-
-              </div>
-              <div class='example_code'>
-                <div class='examplecode'>
-                  <code>
-                    &lt;div class=&quot;checkoutrender&quot;&gt;
-                    <br>            &lt;h3&gt;Summary: &lt;/h3&gt;
-                    <br>            &lt;br&gt;
-                    <br>            &lt;div class='itemlist'&gt;
-                    <br>              &lt;div class='totallist'&gt;
-                    <br>                &lt;h4&gt; Skin Name: &amp;nbsp;&amp;nbsp; BloodMoon Shen
-                    <br>                &lt;/h4&gt;
-                    <br>                &lt;br&gt;
-                    <br>                &lt;h4&gt; Service:&amp;nbsp;&amp;nbsp; NA
-                    <br>                &lt;/h4&gt;
-                    <br>                &lt;br&gt;
-                    <br>                &lt;h4&gt; Ownership:&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;select&gt;
-                    <br>                  &lt;option&gt;select&lt;/option&gt;
-                    <br>                  &lt;option&gt;3 days&lt;/option&gt;
-                    <br>                  &lt;option&gt;7 days&lt;/option&gt;
-                    <br>                  &lt;option&gt;1 month&lt;/option&gt;
-                    <br>                  &lt;option&gt;1 year&lt;/option&gt;
-                    <br>                  &lt;option&gt;10 years&lt;/option&gt;
-                    <br>                  &lt;option&gt;&hellip;&hellip;&lt;/option&gt;
-                    <br>                &lt;/select&gt;
-                    <br>              &lt;/h4&gt;
-                    <br>              &lt;br&gt;
-                    <br>            &lt;/div&gt;
-                    <br>            &lt;div class='totalp'&gt;
-                    <br>              &lt;h4&gt; Total : &amp;nbsp;&amp;nbsp;$50
-                    <br>              &lt;/h4&gt;
-                    <br>            &lt;/div&gt;
-                    <br>          &lt;/div&gt;
-                    <br>          &lt;div class='ssumit3'&gt;
-                    <br>            &lt;div class='sumit3'&gt;&lt;input type=&quot;Submit&quot; class=&quot;sumit&quot; value=&quot;OK&quot;&gt;&lt;/div&gt;
-                    <br>          &lt;/div&gt;
-                    <br>
-                    &lt;/div&gt;
-                  </code>
-                </div>
-              </div>
-            </div>
 
 
 
@@ -664,10 +599,10 @@ League of Legends' flagship Field of Justice, Summoner's Rift, remains the battl
               <div class="adrender">
                 <h3>Art direction: </h3>
 
-  <a href="#" class="image"><img src="img/233.png" width="100" alt="No image"> </a>
+  <a href="#"><img src="img/233.png" width="100" alt="No image"> </a>
 <div class='heyhey'>
-<a href="#" class="image"><img src="img/12.png" width="200" alt="No image"> </a>
-<a href="#" class="image"><img src="img/22.png" width="200" alt="No image"> </a>
+<a href="#" ><img src="img/12.png" width="200" alt="No image"> </a>
+<a href="#" ><img src="img/22.png" width="200" alt="No image"> </a>
 
 </div>
                 <p>
